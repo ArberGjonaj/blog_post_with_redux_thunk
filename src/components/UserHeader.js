@@ -4,9 +4,7 @@ import {fetchUser} from "../actions"
 
 class UserHeader extends React.Component{
 
-componentDidMount(){
-           this.props.fetchUser(this.props.userId)
-}
+
 
     render(){
         console.log(this.props.users)
@@ -27,4 +25,4 @@ const mapStateToProps=(state,ownProps)=>{
 
 
 
-export default connect(mapStateToProps,{fetchUser})(UserHeader);
+export default connect(mapStateToProps)(UserHeader);
